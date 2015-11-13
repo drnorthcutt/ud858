@@ -81,6 +81,19 @@ function greetByName () {
 	request.execute(sayHelloCallback);
 }
 
+function greetByPeriod () {
+	// Get the name from the name_field element
+    var name = document.getElementById("time_field").value;
+	var name = document.getElementById("name_field").value;
+
+	// Call the sayHelloByName() function.
+	// It takes one argument "name"
+	// On success, pass the response to sayHelloCallback()
+	var request = gapi.client.helloworldendpoints.sayHelloByPeriod({'name': name});
+    var request = gapi.client.helloworldendpoints.sayHelloByPeriod({'time': time});
+	request.execute(sayHelloCallback);
+}
+
 // Process the JSON response
 // In this case, just show an alert dialog box
 // displaying the value of the message field in the response

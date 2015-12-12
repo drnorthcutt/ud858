@@ -53,3 +53,5 @@ Thumbs.db
 *.log
 *.mx1
 .com.apple.timemachine.supported
+/Lesson_2/.brackets.json
+/.gitignore
